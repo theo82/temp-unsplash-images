@@ -14,9 +14,16 @@ const SearchForm = () => {
   return (
     <section>
       <h1 className='title'>unsplash images</h1>
-      <form action="search-form" onSubmit={handleSubmit}>
-        <input type="text" name="search" className='form-input' placeholder='cat'/>
-        <button type="submit" className='btn'>search</button>
+      <form className='search-form' onSubmit={handleSubmit}>
+        <input
+          type='text'
+          className='form-input search-input'
+          name='search'
+          placeholder='cat'
+        />
+        <button type='submit' className='btn'>
+          search
+        </button>
       </form>
     </section>
   )
